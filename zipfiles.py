@@ -1,6 +1,6 @@
 import os, zipfile
 
-source_dir, output_filename = 'dataset_train', 'dataset_train.zip'
+source_dir, output_filename = 'cyclegan', 'pix2pixGPU_train.zip'
 
 zipf = zipfile.ZipFile(output_filename, 'w')
 pre_len = len(os.path.dirname(source_dir))
