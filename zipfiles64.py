@@ -2,7 +2,7 @@ import os, zipfile
 
 source_dir, output_filename = 'cyclegan', 'pix2pixGPU_train.zip'
 
-zipf = zipfile.ZipFile(output_filename, 'w')
+zipf = zipfile.ZipFile(output_filename, 'w', allowZip64 = True)
 pre_len = len(os.path.dirname(source_dir))
 for parent, dirnames, filenames in os.walk(source_dir):
     for filename in filenames:
